@@ -1,0 +1,115 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: pt"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 18,
+        "name": "Login com usuario valido",
+        "description": "",
+        "id": "efetuar-login;login-com-usuario-valido;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9962652000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que eu estou na tela de login",
+            "match": {
+              "location": "LoginSteps.que_eu_estou_na_tela_de_login()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 242163000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "eu preencho os campos de \"felipematos@yopmail.com\" e \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "felipematos@yopmail.com",
+                  "offset": 26
+                },
+                {
+                  "val": "123456",
+                  "offset": 54
+                }
+              ],
+              "location": "LoginSteps.eu_preencho_os_campos_de_e(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 275703700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico em login",
+            "match": {
+              "location": "LoginSteps.clico_em_login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 287496800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "o login e efetuado \"felipematos@yopmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "felipematos@yopmail.com",
+                  "offset": 20
+                }
+              ],
+              "location": "LoginSteps.o_login_e_efetuado(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Login"
+          },
+          {
+            "line": 8,
+            "name": "@Login-sucesso"
+          }
+        ]
+      }
+    ],
+    "name": "Efetuar Login",
+    "description": "\r\nSou um usuario e quero efetuar login",
+    "id": "efetuar-login",
+    "keyword": "Funcionalidade",
+    "uri": "Login.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@Login"
+      }
+    ]
+  }
+]
