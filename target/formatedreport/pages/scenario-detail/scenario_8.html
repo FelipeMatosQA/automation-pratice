@@ -1,18 +1,4 @@
-<!--
-Copyright 2018 trivago N.V.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-   http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
---><!doctype html>
+<!doctype html>
 <!--
     Copyright 2018 trivago N.V.
 
@@ -30,13 +16,13 @@ limitations under the License.
     -->
 <html lang="en">
  <head>
-  <base href="..">  
+  <base href="../..">  
   <meta charset="utf-8"> 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-  <meta name="description" content="Cluecumber Report Plugin [1.2.0] - Tag Summary"> 
+  <meta name="description" content="Cluecumber Report Plugin [1.2.0] - Scenario Details"> 
   <meta name="author" content="Cluecumber Report Plugin [1.2.0]"> 
-  <title>Tag Summary - 2023/04/19 22:13:01</title> 
+  <title>Scenario Details - 2023/04/19 22:05:33</title> 
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
   <link href="css/cluecumber.css" rel="stylesheet" type="text/css"> 
   <link rel="stylesheet" href="css/datatables.min.css"> 
@@ -45,26 +31,32 @@ limitations under the License.
  </head> 
  <body> 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
-   <span class="navbar-brand">Tag Summary</span> 
+   <span class="navbar-brand">Scenario Details</span> 
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
    <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
     <ul class="navbar-nav mr-auto"> 
      <li class="nav-item"> <a class="nav-link" href="pages/feature-summary.html">All Features</a> </li> 
+     <li class="nav-item"> <a class="nav-link" href="pages/tag-summary.html">All Tags</a> </li> 
      <li class="nav-item"> <a class="nav-link" href="index.html">All Scenarios</a> </li> 
     </ul> 
-    <span class="text-light">2023/04/19 22:13:01</span> 
+    <span class="text-light">2023/04/19 22:05:33</span> 
    </div> 
   </nav> 
   <main role="main" class="container"> 
    <div class="cluecumber-template"> 
     <div class="pb-2 mt-4 mb-2 border-bottom"> 
-     <h3>All Tags</h3> 
+     <h3>Scenario 'Cadastro com os campos vazios Email vazio'</h3> 
     </div> 
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = (obj.contentWindow.document.body.scrollHeight + 20) + 'px';
+        }
+    </script> 
     <div class="row"> 
      <div class="col-sm-8"> 
       <div class="card h-100"> 
        <div class="card-header">
-        Tag Summary Result Chart
+        Scenario Result Chart
        </div> 
        <div class="card-body"> 
         <div id="canvas-holder" class="w-100 text-center"> 
@@ -76,62 +68,110 @@ limitations under the License.
      <div class="col-sm-4"> 
       <div class="card h-100"> 
        <div class="card-header">
-        Tag Summary
+        Scenario Information
        </div> 
        <div class="card-body"> 
         <ul class="list-group list-group-flush"> 
-         <li class="list-group-item"><strong>2</strong> Tag(s)</li> 
-         <li class="list-group-item"><strong>2</strong> passed Scenario(s)</li> 
-         <li class="list-group-item"><strong>0</strong> failed Scenario(s)</li> 
-         <li class="list-group-item"><strong>0</strong> skipped Scenario(s)</li> 
+         <li class="list-group-item"><strong>4</strong> Step(s)</li> 
+         <li class="list-group-item"><strong>4</strong> passed</li> 
+         <li class="list-group-item"><strong>0</strong> failed</li> 
+         <li class="list-group-item"><strong>0</strong> skipped</li> 
+         <li class="list-group-item"><strong>Time:</strong> 0m 44s 599ms</li> 
+         <li class="list-group-item"> <a href="pages/tag-scenarios/tag_cadastro-negativo.html">@cadastro-negativo</a>, <a href="pages/tag-scenarios/tag_cadastro.html">@cadastro</a> </li> 
         </ul> 
        </div> 
       </div> 
      </div> 
     </div> 
-    <div class="row"> 
+    <ul class="list-group list-group-flush"> 
      <div class="col-sm-12"> 
       <div class="card h-100"> 
        <div class="card-header">
-        Available Tags
+        Steps
        </div> 
        <div class="card-body"> 
-        <table id="tag_summary" class="table table-hover renderAsDataTable"> 
-         <thead> 
-          <tr> 
-           <th>Tag</th> 
-           <th>Total</th> 
-           <th>Passed</th> 
-           <th>Failed</th> 
-           <th>Skipped</th> 
-          </tr> 
-         </thead> 
-         <tbody> 
-          <tr> 
-           <td class="text-left"><a href="pages/tag-scenarios/tag_Login.html">@Login</a></td> 
-           <td class="text-right"><strong>1</strong></td> 
-           <td class="text-right">1</td> 
-           <td class="text-right">0</td> 
-           <td class="text-right">0</td> 
-          </tr> 
-          <tr> 
-           <td class="text-left"><a href="pages/tag-scenarios/tag_Login-sucesso.html">@Login-sucesso</a></td> 
-           <td class="text-right"><strong>1</strong></td> 
-           <td class="text-right">1</td> 
-           <td class="text-right">0</td> 
-           <td class="text-right">0</td> 
-          </tr> 
-         </tbody> 
-        </table> 
+        <li class="list-group-item"> 
+         <div class="row row_passed"> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            Step 1
+           </nobr> 
+          </div> 
+          <div class="col-6 text-left"> 
+           <span data-toggle="tooltip" title="CadastroSteps.que_eu_estou_na_tela_de_cadastro()"> Dado que eu estou na tela de cadastro </span> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 42s 993ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            Step 2
+           </nobr> 
+          </div> 
+          <div class="col-6 text-left"> 
+           <span data-toggle="tooltip" title="CadastroSteps.preencho_os_campos_de_cadastro(String,String,String)"> E <strong></strong>preencho os campos de cadastro "<strong>Felipe</strong>" "" "<strong>123456</strong>" </span> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 01s 431ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            Step 3
+           </nobr> 
+          </div> 
+          <div class="col-6 text-left"> 
+           <span data-toggle="tooltip" title="CadastroSteps.clico_em_cadastrar()"> Quando clico em cadastrar </span> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 00s 107ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            Step 4
+           </nobr> 
+          </div> 
+          <div class="col-6 text-left"> 
+           <span data-toggle="tooltip" title="CadastroSteps.e_exibido_mensagem_de_critica(String)"> Entao e exibido mensagem de critica "<strong>O campo e-mail deve ser prenchido corretamente</strong>" </span> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 00s 066ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> </li> 
        </div> 
       </div> 
      </div> 
-    </div> 
+    </ul> 
    </div> 
   </main> 
   <footer class="footer navbar-dark bg-dark"> 
    <div class="container-fluid"> 
-    <span class="text-muted">Generated by Cluecumber Report Plugin [1.2.0], 2023/04/19 22:13:01.</span> 
+    <span class="text-muted">Generated by Cluecumber Report Plugin [1.2.0], 2023/04/19 22:05:33.</span> 
    </div> 
   </footer> 
   <script src="js/jquery.min.js"></script> 
@@ -163,42 +203,59 @@ limitations under the License.
             var chart = new Chart(ctx, eval({
   "data": {
     "labels": [
-      "@Login",
-      "@Login-sucesso"
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "Step 4"
     ],
     "datasets": [
       {
         "data": [
-          1,
-          1
+          42993,
+          1431,
+          107,
+          66
         ],
         "backgroundColor": [
           "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)"
         ],
-        "label": "passed"
+        "label": "passed",
+        "stack": "complete"
       },
       {
         "data": [
+          0,
+          0,
           0,
           0
         ],
         "backgroundColor": [
           "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)"
         ],
-        "label": "failed"
+        "label": "failed",
+        "stack": "complete"
       },
       {
         "data": [
+          0,
+          0,
           0,
           0
         ],
         "backgroundColor": [
           "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)"
         ],
-        "label": "passed"
+        "label": "skipped",
+        "stack": "complete"
       }
     ]
   },
@@ -208,12 +265,12 @@ limitations under the License.
         {
           "ticks": {
             "min": 0,
-            "display": false
+            "display": true
           },
           "stacked": true,
           "scaleLabel": {
             "display": true,
-            "labelString": "2 Tag(s)"
+            "labelString": "Step(s)"
           },
           "stepSize": 0.0
         }
@@ -227,9 +284,9 @@ limitations under the License.
           "stacked": true,
           "scaleLabel": {
             "display": true,
-            "labelString": "Number of Scenarios"
+            "labelString": "Step Runtime"
           },
-          "stepSize": 1.0
+          "stepSize": 0.0
         }
       ]
     }

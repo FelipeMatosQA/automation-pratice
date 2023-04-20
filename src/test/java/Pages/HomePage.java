@@ -1,9 +1,9 @@
 package Pages;
 
 import Runner.RunCucumberTest;
-
-import Suport.Utils;
 import org.openqa.selenium.By;
+
+import static Suport.Comands.clickElement;
 
 
 public class HomePage extends RunCucumberTest {
@@ -17,18 +17,20 @@ public class HomePage extends RunCucumberTest {
     private By botaoLogin = By.id("btnLogin");
 
     public void acessarSite(){
-        getDriver("firefox");
+        getDriver(System.getProperty("browser"));
         getDriver().get(url);
     }
 
     public void acessarCadastro(){
-        getDriver().findElement(acessarCadastro).click();
+        clickElement(acessarCadastro);
+        //getDriver().findElement(acessarCadastro).click();
 
     }
 
     public void acessarLogin(){
-        getDriver().findElement(acessarLogin).click();
-       // Utils.esperarPorElementoEstarClicavel(By.id("btnLogin"),10);
+        clickElement(acessarLogin);
+        //getDriver().findElement(acessarLogin).click();
+
 
     }
 }

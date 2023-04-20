@@ -126,7 +126,7 @@ formatter.match({
   "location": "LoginSteps.que_eu_estou_na_tela_de_login()"
 });
 formatter.result({
-  "duration": 9962652000,
+  "duration": 109320561600,
   "status": "passed"
 });
 formatter.match({
@@ -143,14 +143,14 @@ formatter.match({
   "location": "LoginSteps.eu_preencho_os_campos_de_e(String,String)"
 });
 formatter.result({
-  "duration": 242163000,
+  "duration": 975286100,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clico_em_login()"
 });
 formatter.result({
-  "duration": 275703700,
+  "duration": 135184400,
   "status": "passed"
 });
 formatter.match({
@@ -163,7 +163,7 @@ formatter.match({
   "location": "LoginSteps.o_login_e_efetuado(String)"
 });
 formatter.result({
-  "duration": 287496800,
+  "duration": 141797400,
   "status": "passed"
 });
 });

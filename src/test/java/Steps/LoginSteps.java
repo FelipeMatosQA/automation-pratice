@@ -25,13 +25,11 @@ public class LoginSteps extends RunCucumberTest {
     public void eu_preencho_os_campos_de_e(String email, String senha) {
         loginPage.preencherEmail(email);
         loginPage.preencherSenha(senha);
-
     }
 
     @Quando("^clico em login$")
     public void clico_em_login() {
         loginPage.clicarLogin();
-
     }
 
     @Entao("^o login e efetuado \"([^\"]*)\"$")
@@ -44,7 +42,6 @@ public class LoginSteps extends RunCucumberTest {
 
     @Entao("^e exibido critica \"([^\"]*)\"$")
     public void e_exibido_critica(String critica) {
-
         loginPage.validarCampoFaltando(critica);
     }
 

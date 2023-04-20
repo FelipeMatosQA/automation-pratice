@@ -19,7 +19,7 @@ public class Utils extends RunCucumberTest {
     public static void esperarPorElementoEstarVisivel(By elemento, int tempo){
 
         WebDriverWait wait = new WebDriverWait(getDriver(), tempo);
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(elemento));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(elemento));
 
     }
 
