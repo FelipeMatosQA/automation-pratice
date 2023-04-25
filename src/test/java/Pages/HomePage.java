@@ -23,13 +23,13 @@ public class HomePage extends RunCucumberTest {
 
     public void acessarCadastro(){
         clickElement(acessarCadastro);
-        //getDriver().findElement(acessarCadastro).click();
+
 
     }
 
     public void acessarLogin(){
         clickElement(acessarLogin);
-        //getDriver().findElement(acessarLogin).click();
+
 
 
     }

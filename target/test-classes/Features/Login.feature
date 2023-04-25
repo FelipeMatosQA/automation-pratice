@@ -26,7 +26,7 @@ Funcionalidade: Efetuar Login
     Entao e exibido critica "<mensagem>"
 
     Exemplos:
-    |email                       |senha      |    mensagem     |nome          |
+    |email                       |senha      |    mensagem     |     nome     |
     |                            |  123456   |E-mail inválido. |  Sem email   |
     |  felipematos@yopmail.com   |           |Senha inválida.  |  Sem senha   |
     |    emailInvalido           |  123456   |E-mail inválido. |Email invalido|

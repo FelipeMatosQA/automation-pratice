@@ -11,7 +11,7 @@ public class Utils extends RunCucumberTest {
 
     public static void esperarPorElementoEstarClicavel(By elemento, int tempo){
 
-        WebDriverWait wait = new WebDriverWait(getDriver(), tempo);
+        WebDriverWait wait = new WebDriverWait(getDriver(),tempo);
         wait.until(ExpectedConditions.elementToBeClickable(elemento));
 
     }

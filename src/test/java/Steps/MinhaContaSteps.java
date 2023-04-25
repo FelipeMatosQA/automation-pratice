@@ -2,6 +2,9 @@ package Steps;
 
 import Pages.MinhaContaPage;
 import Runner.RunCucumberTest;
+import Suport.ScreenShotUtils;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.java.pt.Entao;
 
 public class MinhaContaSteps extends RunCucumberTest {
@@ -14,5 +17,12 @@ public class MinhaContaSteps extends RunCucumberTest {
         minhaContaPage.validarMsgLogin("Cadastro realizado!");
         minhaContaPage.validarQuemEstaLogado("Bem-vindo ",nome);
 
+    }
+
+    @After
+    public static void afterScenario(Scenario scenario) {
+        if (scenario.isFailed()) {
+            ScreenShotUtils.takeScreenshotOnScenario(scenario);
+        }
     }
 }

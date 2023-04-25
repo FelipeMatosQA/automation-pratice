@@ -4,6 +4,9 @@ import Pages.HomePage;
 import Pages.LoginPage;
 import Pages.MinhaContaPage;
 import Runner.RunCucumberTest;
+import Suport.ScreenShotUtils;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
@@ -39,13 +42,21 @@ public class LoginSteps extends RunCucumberTest {
     }
 
 
-
     @Entao("^e exibido critica \"([^\"]*)\"$")
     public void e_exibido_critica(String critica) {
         loginPage.validarCampoFaltando(critica);
     }
 
+    @After
+    public static void afterScenario(Scenario scenario) {
+        if (scenario.isFailed()) {
+            ScreenShotUtils.takeScreenshotOnScenario(scenario);
+        }
+    }
+
 }
+
+
 
 
 

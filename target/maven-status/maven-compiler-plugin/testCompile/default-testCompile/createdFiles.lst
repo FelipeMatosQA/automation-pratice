@@ -2,3 +2,4 @@ Steps\MinhaContaSteps.class
 Pages\MinhaContaPage.class
 Suport\Comands.class
 Runner\RunBase.class
+Suport\ScreenShotUtils.class

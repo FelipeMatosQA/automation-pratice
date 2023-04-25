@@ -5,6 +5,9 @@ import Pages.HomePage;
 import Pages.MinhaContaPage;
 import Runner.RunBase;
 import Runner.RunCucumberTest;
+import Suport.ScreenShotUtils;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Entao;
@@ -68,5 +71,12 @@ public class CadastroSteps extends RunCucumberTest {
     @Entao("^e exibido critica de cadastro sem senha$")
     public void eExibidoCriticaDeCadastroSemSenha() {
         cadastroPage.validarCampoFaltando("O campo senha deve ter pelo menos 6 dígitos");
+    }
+
+    @After
+    public static void afterScenario(Scenario scenario) {
+        if (scenario.isFailed()) {
+            ScreenShotUtils.takeScreenshotOnScenario(scenario);
+        }
     }
 }
