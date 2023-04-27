@@ -9,7 +9,6 @@ jobs:
     runs-on:  ubuntu-latest
 
     steps:
-
 #clonar o projeto
       - name: Clonar o projeto
         uses: actions/checkout@v3
@@ -31,6 +30,7 @@ jobs:
 #instalar o chrome driver
       - name: Instalar ChromeDriver
         uses: nanasess/setup-chromedriver@v2
+
       - run: |
           export DISPLAY=:99
           chromedriver --url-base=/wd/hub &
