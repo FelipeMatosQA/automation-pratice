@@ -1,0 +1,45 @@
+name: Smoke Test - PR
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  RunTest:
+    runs-on:  ubuntu-latest
+
+    steps:
+
+#clonar o projeto
+      - name: Clonar o projeto
+        uses: actions/checkout@v3
+
+#instalar o jdk
+      - name: Instalar jdk
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+          cache: 'maven'
+
+#instalar o chrome
+      - name: Instalar Chrome
+        uses: browser-actions/setup-chrome@v1.2.0
+        with:
+          chrome-version: latest
+
+#instalar o chrome driver
+      - name: Instalar ChromeDriver
+        uses: nanasess/setup-chromedriver@v2
+        run: |
+          export DISPLAY=:99
+          chromedriver --url-base=/wd/hub &
+          sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 & # optional
+
+#executar os testes
+      - name: Rodar o teste
+        run: mvn test -Dtest=RunCucumberTest -Dbrowser=chrome-ci
+#emitir relatorio
+
+
+
