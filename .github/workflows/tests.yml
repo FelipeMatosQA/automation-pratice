@@ -28,7 +28,7 @@ jobs:
           chrome-version: latest
 
 #instalar o chrome driveraaa
-      -
+
       - name: Instalar ChromeDriver
         uses: nanasess/setup-chromedriver@v2
 
