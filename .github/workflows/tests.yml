@@ -2,7 +2,7 @@ name: Smoke Test - PR
 
 on:
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   RunTest:
@@ -27,7 +27,8 @@ jobs:
         with:
           chrome-version: latest
 
-#instalar o chrome driver
+#instalar o chrome driveraaa
+      -
       - name: Instalar ChromeDriver
         uses: nanasess/setup-chromedriver@v2
 
@@ -39,7 +40,7 @@ jobs:
 #executar os testes
       - name: Rodar o teste
         run: mvn test -Dtest=RunCucumberTest -Dbrowser=chrome-ci
-#emitir relatorio 111gitgi1111gaaadd1111g
+#emitir relatorio 111gitgi1111gaaadd1111g1111aaaaag ttt111
 
 
 
