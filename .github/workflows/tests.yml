@@ -40,7 +40,7 @@ jobs:
 #executar os testes
       - name: Rodar o teste
         run: mvn test -Dtest=RunCucumberTest -Dbrowser=chrome-ci
-#emitir relatorio 111gitgi1111gaaadd1111g1111aaaaag ttt
+#emitir relatorio 111gitgi1111gaaadd1111g1111aaaaag ttt111
 
 
 
