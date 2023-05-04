@@ -23,14 +23,9 @@ public class HomePage extends RunCucumberTest {
 
     public void acessarCadastro(){
         clickElement(acessarCadastro);
-
-
     }
 
     public void acessarLogin(){
         clickElement(acessarLogin);
-
-
-
     }
 }
