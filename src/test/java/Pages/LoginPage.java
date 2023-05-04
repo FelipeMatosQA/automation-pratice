@@ -10,13 +10,13 @@ public class LoginPage extends RunCucumberTest {
 
     private By campoEmail = By.id("user");
 
-    private By campoSenha = By.id("password1");
+    private By campoSenha = By.id("password");
 
     private By botaoLogin = By.id("btnLogin");
 
     private By campoFaltando = By.className("invalid_input");
 
-    //criando um comentario.22
+
 
     public void preencherEmail(String email){
         fillField(campoEmail,email);

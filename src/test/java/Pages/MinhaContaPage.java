@@ -1,8 +1,6 @@
 package Pages;
 
 import Runner.RunCucumberTest;
-import Suport.Utils;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 
 import static Suport.Comands.checkMensage;
