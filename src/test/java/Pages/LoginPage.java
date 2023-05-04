@@ -10,7 +10,7 @@ public class LoginPage extends RunCucumberTest {
 
     private By campoEmail = By.id("user");
 
-    private By campoSenha = By.id("password1");
+    private By campoSenha = By.id("password");
 
     private By botaoLogin = By.id("btnLogin");
 
