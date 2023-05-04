@@ -41,9 +41,9 @@ jobs:
 
       - name: Arquivar relatório
         uses: actions/upload-artifact@v3
-          with:
-            name: tests-report
-            path: '**/formatedreport/'
+        with:
+          name: tests-report
+          path: '**/formatedreport/'
 
 
 
